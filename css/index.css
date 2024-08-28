@@ -31,12 +31,14 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 body {
     line-height: 1;
     color: #111;
     font-family: var(--font02);
+    cursor: default;
 }
 
 html {
@@ -397,7 +399,7 @@ section {
 }
 
 .section01 .swiper-slide {
-    width: 21% !important;
+    /* width: 21% !important; */
     margin: 0 20px;
 }
 
@@ -431,15 +433,17 @@ section {
 .section01 .section01_swiper .swiper-slide .text_wrap ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
     margin-bottom: 25px;
     row-gap: 10px;
+    column-gap: 20px;
+    height: 40px;
 }
 
 .section01 .section01_swiper .swiper-slide .text_wrap ul li {
     font-size: 1.4rem;
-    /* position: relative; */
-    padding: 0 10px;
-    border-right: 1px solid #666;
+    height: 15px;
+    position: relative;
 }
 
 .section01 .section01_swiper .swiper-slide .text_wrap ul li:first-child {
@@ -450,7 +454,7 @@ section {
     border: none;
 }
 
-/* .section01 .section01_swiper .swiper-slide .text_wrap ul li::before {
+.section01 .section01_swiper .swiper-slide .text_wrap ul li::before {
     content: '';
     width: 1px;
     height: 14px;
@@ -458,13 +462,13 @@ section {
 
     position: absolute;
     top: 50%;
-    left: -10px;
+    right: -10px;
     transform: translateY(-50%);
-} */
+}
 
-/* .section01 .section01_swiper .swiper-slide .text_wrap ul li:first-child::before {
+.section01 .section01_swiper .swiper-slide .text_wrap ul li:last-child::before {
     display: none;
-} */
+}
 
 .section01 .section01_swiper .swiper-slide .text_wrap>div {
     display: flex;
@@ -1614,7 +1618,7 @@ section {
     }
 
     .section01 .swiper-slide {
-        width: 38% !important;
+       /*  width: 38% !important; */
         margin: 0 15px;
     }
 
@@ -1995,7 +1999,7 @@ section {
     }
 
     .section01 .swiper-slide {
-        width: 30% !important;
+       /*  width: 30% !important; */
     }
 
     .section01 .swiper-slide figure {
@@ -2016,7 +2020,7 @@ section {
     }
 
     .section01 .section01_swiper .swiper-slide .text_wrap ul {
-        width: 261px;
+        /* width: 261px; */
         height: 41px;
         row-gap: 5px;
         margin-bottom: 20px;
@@ -2306,14 +2310,14 @@ section {
         font-size: 1.875rem;
     }
     .section01 .swiper-slide {
-        width: 30% !important;
+        /* width: 30% !important; */
         margin: 0 10px;
     }
     .section01 .swiper-slide figure {
         height: 300px;
     }
     .section01 .section01_swiper .swiper-slide .text_wrap ul {
-        width: 222px;
+        /* width: 222px; */
     }
     .section01 .section01_swiper .swiper-slide .text_wrap ul li {
         font-size: 1.625rem;
@@ -2390,7 +2394,7 @@ section {
         width: 100%;
     }
     .section01 .swiper-slide {
-        width: 40% !important;
+       /*  width: 40% !important; */
     }
     .section02 .title_wrap .text {
         width: 600px;
@@ -2480,7 +2484,7 @@ section {
         display: none;
     }
     .section01 .swiper-slide {
-        width: 45% !important;
+       /*  width: 45% !important; */
     }
     .section03 .wrap .item {
         width: 245px;
@@ -2567,7 +2571,7 @@ section {
         margin-top: 30px;
     }
     .section01 .swiper-slide {
-        width: 46% !important;
+        /* width: 46% !important; */
     }
     .section01 .swiper-slide figure {
         height: 290px;
@@ -2832,7 +2836,8 @@ section {
         text-overflow: ellipsis;
     }
     .section01 .swiper-slide {
-        width: 56% !important;
+       /*  width: 56% !important; */
+       width: calc((100% - 30px));
     }
     .section06 .list_wrap {
         column-gap: 30px;
@@ -2869,7 +2874,7 @@ section {
         font-size: 2.5rem;
     }
     .section01 .swiper-slide {
-        width: 64% !important;
+       /*  width: 64% !important; */
     }
     .section02 .title_wrap .text h4 {
         font-size: 2.5rem;
@@ -2999,7 +3004,7 @@ section {
 
 @media screen and (max-width:350px) {
     .section01 .swiper-slide {
-        width: 80% !important;
+        /* width: 80% !important; */
     }
     .section02 .title_wrap .title h3:nth-child(1) {
         font-size: 4.166rem;
